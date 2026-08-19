@@ -6,10 +6,10 @@ import subprocess
 
 
 # ===== 请在这里修改生成参数 =====
-track = "test"
-order = "2"
-app_name = "测试应用"
-compony_name = "测试公司"  # 按需求保留 compony 的拼写
+track = "phone_clone"
+order = "0"
+app_name = "手机克隆换机传输"
+compony_name = "南京景珩拓科技有限公司"  # 按需求保留 compony 的拼写
 
 # 目标目录已存在时是否允许覆盖；默认关闭以免误删已有页面。
 OVERWRITE = False

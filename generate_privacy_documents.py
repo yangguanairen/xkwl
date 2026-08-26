@@ -6,9 +6,9 @@ import subprocess
 
 
 # ===== 请在这里修改生成参数 =====
-track = "phone_clone"
+track = "calculator"
 order = "1"
-app_name = "手机文件克隆换机"
+app_name = "万能计算器pro"
 compony_name = "南京景珩拓科技有限公司"  # 按需求保留 compony 的拼写
 
 # 目标目录已存在时是否允许覆盖；默认关闭以免误删已有页面。
@@ -19,9 +19,14 @@ PUSH_TO_REMOTE = True
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
-TEMPLATE_DIR = PROJECT_ROOT / "site" / "bus" / "8"
-SOURCE_APP_NAME = "公交地铁出行助手"
-SOURCE_COMPONY_NAME = "南京星绘视界网络科技有限公司第一分公司"
+TEMPLATE_DIR = PROJECT_ROOT / "site" / "express_delivery" / "1"
+SOURCE_APP_NAME = "快递查询免费"
+SOURCE_COMPONY_NAME = "南京辰光汇智科技有限公司"
+
+# 使用到高德sdk的使用下述配置
+# TEMPLATE_DIR = PROJECT_ROOT / "site" / "bus" / "8"
+# SOURCE_APP_NAME = "公交地铁出行助手"
+# SOURCE_COMPONY_NAME = "南京星绘视界网络科技有限公司第一分公司"
 
 
 def validate_path_part(value: str, name: str) -> str:

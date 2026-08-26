@@ -1,0 +1,42 @@
+[
+  {
+    "track": "remote_control",
+    "productName": "遥控器"
+  },
+  {
+    "track": "bus",
+    "productName": "乘车码"
+  },
+  {
+    "track": "game_assistant",
+    "productName": "游戏辅助"
+  },
+  {
+    "track": "wifi",
+    "productName": "WiFi"
+  },
+  {
+    "track": "pension_fund",
+    "productName": "社保公积金"
+  },
+  {
+    "track": "express_delivery",
+    "productName": "快递查询"
+  },
+  {
+    "track": "pet_translate",
+    "productName": "猫狗翻译"
+  },
+  {
+    "track": "phone_clone",
+    "productName": "手机克隆"
+  },
+  {
+    "track": "shopping_mail",
+    "productName": "省钱购物"
+  },
+  {
+    "track": "calculator",
+    "productName": "计算器"
+  }
+]

@@ -23,6 +23,11 @@ TEMPLATE_DIR = PROJECT_ROOT / "site" / "express_delivery" / "1"
 SOURCE_APP_NAME = "快递查询免费"
 SOURCE_COMPONY_NAME = "南京辰光汇智科技有限公司"
 
+# PROJECT_ROOT = Path(__file__).resolve().parent
+# TEMPLATE_DIR = PROJECT_ROOT / "site" / "pension_fund" / "2"
+# SOURCE_APP_NAME = "社保养老云计算"
+# SOURCE_COMPONY_NAME = "南京星绘视界网络科技有限公司第二分公司"
+
 # 使用到高德sdk的使用下述配置
 # TEMPLATE_DIR = PROJECT_ROOT / "site" / "bus" / "8"
 # SOURCE_APP_NAME = "公交地铁出行助手"

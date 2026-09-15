@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import os
+import os     
 import sys
 
 import update_server_documents
@@ -10,10 +10,10 @@ import generate_privacy_documents
 
 
 # ===== 统一配置：日常运行只需要修改这里 =====
-track = "calculator"
-order = "2"
-app_name = "万能计算器免费版"
-company_name = "南京沐星智科技有限公司"
+track = "truck_driver"
+order = "1"
+app_name = "货运司机运货"
+company_name = "南京攸星矩科技有限公司"
 
 # 已存在目标目录时是否覆盖，以及生成后是否提交并推送 Git。
 overwrite = False

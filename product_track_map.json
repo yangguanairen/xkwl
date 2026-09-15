@@ -38,5 +38,13 @@
   {
     "track": "calculator",
     "productName": "计算器"
+  },
+    {
+    "track": "email",
+    "productName": "电子邮箱"
+  },
+    {
+    "track": "truck_driver",
+    "productName": "货车司机"
   }
 ]

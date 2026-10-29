@@ -10,17 +10,18 @@ import generate_privacy_documents
 
 
 # ===== 统一配置：日常运行只需要修改这里 =====
-track = "truck_driver"
-order = "1"
-app_name = "货运司机运货"
-company_name = "南京攸星矩科技有限公司"
+track = "alarm"
+order = "2"
+app_name = "悬浮闹钟Clock"
+company_name = "南京星途睿远科技有限公司"
 
 # 已存在目标目录时是否覆盖，以及生成后是否提交并推送 Git。
-overwrite = False
+overwrite = True
 push_to_remote = True
 
 # 推荐通过环境变量提供，避免令牌被提交到 Git。
 api_token = "dd7eac3eb8b24115b153b21dd23431b1"
+
 
 
 def exit_code_from_system_exit(exc: SystemExit) -> int:

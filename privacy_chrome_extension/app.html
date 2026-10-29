@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>隐私文档工具</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <main class="workspace">
+    <header class="page-heading">
+      <div><h1>生成并同步协议</h1><p class="muted">选择赛道和马甲号，自动带入应用资料</p></div>
+      <button id="settings" class="quiet" type="button">连接设置</button>
+    </header>
+    <form id="workflow" class="panel">
+      <div class="source-bar">
+        <div><button type="button" id="open-feishu" class="text-button">飞书应用库 ↗</button><p class="muted" id="source-status">正在读取应用列表…</p></div>
+        <button type="button" id="refresh">↻ 刷新列表</button>
+      </div>
+      <div class="columns">
+        <label>赛道<select id="track" required disabled><option value="">请先加载飞书列表</option></select></label>
+        <label><span class="label-row">马甲号<small>飞书：马甲序号</small></span><select id="order" required disabled><option value="">请先选择赛道</option></select></label>
+      </div>
+      <label><span class="label-row">应用名称<small>飞书：备案名称 · 可编辑</small></span><input id="app-name" maxlength="500" placeholder="选择马甲号后自动填入" required></label>
+      <label><span class="label-row">主体名称<small>飞书：所属主体 · 可编辑</small></span><input id="company-name" maxlength="500" placeholder="选择马甲号后自动填入" required><small class="help">主体名称不完整时可直接补全，修改仅用于本次生成。</small></label>
+      <label>协议模板<select id="template"><option value="normal">普通模板</option><option value="amap">高德模板</option></select></label>
+      <label>渠道<select id="channel"><option value="dev">dev</option><option value="xiaomi">xiaomi</option><option value="huawei">huawei</option><option value="oppo">oppo</option><option value="vivo">vivo</option><option value="honor">honor</option><option value="qq">qq</option><option value="baidu">baidu</option></select><small class="help">本次仅同步所选渠道的隐私政策和用户协议。</small></label>
+      <div class="login-bar">
+        <div><span class="section-label">星空未来登录</span><p class="muted" id="login-status">正在检测…</p></div>
+        <div class="button-row"><button type="button" id="open-site" class="quiet">打开网站 ↗</button><button type="button" id="check-login">重新检测</button></div>
+      </div>
+      <div class="actions"><button type="submit" class="primary" id="run" disabled>生成并同步</button></div>
+      <p class="status" id="status" role="status" aria-live="polite">请选择应用。</p>
+      <div id="results" class="results" aria-live="polite"></div>
+    </form>
+    <details id="details"><summary>运行详情</summary><pre id="log">等待执行任务…</pre></details>
+    <p class="footnote" id="sync-target" aria-live="polite">同步目标：Android / dev · 已有记录更新，缺失记录创建</p>
+  </main>
+</body>
+</html>

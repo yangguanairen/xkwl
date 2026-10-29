@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>飞书连接设置 · 隐私文档工具</title>
+  <link rel="stylesheet" href="styles.css"><script type="module" src="settings.js"></script>
+</head>
+<body>
+  <main class="workspace">
+    <header class="page-heading"><div><h1>飞书连接设置</h1><p class="muted">配置一次，日常在应用列表中选择即可</p></div><a href="app.html">返回工具</a></header>
+    <form id="connection" class="panel">
+      <p class="notice">飞书网页登录状态不能直接作为开放平台 API 凭证。请使用有此表读取权限的飞书自建应用，或已有的开放平台访问凭证。</p>
+      <label>多维表格链接<input type="url" id="base-url" required></label>
+      <label class="check"><input type="checkbox" id="view-only"><span>只读取链接中的当前视图（默认读取整张数据表）</span></label>
+      <label>授权方式<select id="auth-mode"><option value="app">自建应用 App ID / App Secret（自动获取访问凭证）</option><option value="token">已有访问凭证（过期后需手动更新）</option></select></label>
+      <div id="app-fields">
+        <label>App ID<input id="app-id" placeholder="cli_..." autocomplete="off" spellcheck="false"></label>
+        <label>App Secret<input id="app-secret" type="password" autocomplete="new-password" placeholder="填写飞书应用密钥"></label>
+      </div>
+      <div id="token-fields" hidden><label>飞书 user_access_token / tenant_access_token<input id="feishu-token" type="password" autocomplete="new-password" placeholder="填写开放平台访问凭证"></label></div>
+      <label class="check"><input type="checkbox" id="remember"><span>在此浏览器记住飞书凭证<small class="help">默认仅保留到关闭浏览器。勾选后存入扩展本机存储，非系统钥匙串；请只在自己的设备上使用。</small></span></label>
+      <p class="muted" id="credential-status">尚未配置。</p>
+      <div class="actions"><button type="button" id="clear">清除已保存的凭证和列表</button><button type="submit" class="primary" id="save">保存连接设置</button></div>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </form>
+    <details><summary>首次配置需要哪些权限？</summary><div class="notice">
+      <p>1. 在飞书开放平台创建企业自建应用，取得 App ID 和 App Secret。</p>
+      <p>2. 开通目标接口要求的多维表格记录读取、字段读取权限，并发布应用。</p>
+      <p>3. 在目标表格中“添加文档应用”，授予该应用可阅读权限。</p>
+      <p>4. 表格须包含：所属主体、赛道、马甲序号、备案名称。</p>
+      <p><a href="https://open.feishu.cn/document/server-docs/docs/bitable-v1/app-table-record/list" target="_blank" rel="noopener noreferrer">飞书官方接入文档 ↗</a> · <a href="README.md" target="_blank">本地使用说明 ↗</a></p>
+    </div></details>
+  </main>
+</body>
+</html>

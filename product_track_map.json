@@ -46,5 +46,37 @@
     {
     "track": "truck_driver",
     "productName": "货车司机"
+  },
+    {
+    "track": "memo",
+    "productName": "备忘录"
+  },
+    {
+    "track": "countdown_day",
+    "productName": "倒数日"
+  },
+    {
+    "track": "virtual_lover",
+    "productName": "虚拟恋人"
+  },
+    {
+    "track": "phone_monitoring",
+    "productName": "手机监控"
+  },
+    {
+    "track": "turntable",
+    "productName": "大转盘"
+  },
+    {
+    "track": "violation_query",
+    "productName": "违章查询"
+  },
+    {
+    "track": "alarm",
+    "productName": "闹钟"
+  },
+    {
+    "track": "car_services",
+    "productName": "车主服务"
   }
 ]
